@@ -1,6 +1,14 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-uglify');
+
+// Task para Compilar o JS
+function scripts() {
+    return gulp.src('./src/scripts/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/js'))
+}
 
 // Task para compilar SASS
 function styles() {
@@ -20,15 +28,17 @@ function images() {
 function watchFiles() {
     gulp.watch('./src/styles/*.scss', styles);
     gulp.watch('./index.html');
+    gulp.watch('./src/scripts/*.js', gulp.parallel(scripts))
 }
 
 // Exportações
 exports.styles = styles;          // roda: npm run styles ou gulp styles
 exports.images = images;          // roda: npm run images ou gulp images
 exports.watch = watchFiles;       // roda: npm run watch ou gulp watch
+exports.uglify = scripts;         // roda: npm run uglify ou gulp uglify
 
 // Build básico (só SASS)
 exports.build = gulp.parallel(styles);
 
 // Build completo (SASS + imagens, só quando quiser)
-exports.default = gulp.parallel(styles, images);
+exports.default = gulp.parallel(styles, images, scripts);
