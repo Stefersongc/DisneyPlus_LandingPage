@@ -6,12 +6,27 @@
     <title>Disney+⎪As melhores histórias em um só lugar </title>
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
+<header class="header">
+    <div class="header__container">
+        <h1>
+            <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney">
+        </h1>
+        <ul class="header__links">
+            <li class="header__links__item">
+                <a class="button button--secondary" href="https://www.disneyplus.com/en-gb/identity/sign-up/enter-email?pref=disney_premium&duration=monthly">Assine agora</a>
+            </li>
+            <li class="header__links__item">
+                <a class="button button--dark" href="https://www.disneyplus.com/identity/login/enter-email">Entrar</a>
+            </li>
+        </ul>
+    </div>
+</header>
 <body>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg">
-            </h1>
+            </div>
             <h3 class="title--small">
                 As melhores histórias em um só lugar.
             </h3>
@@ -22,14 +37,14 @@
             </p>
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Combo Disney+ Star Plus">
-                    <button class="button">Assine agora</button>
+                    <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="Combo Disney+ Star Plus">
+                    <button onclick="window.location.href='https://www.disneyplus.com/en-gb/identity/sign-up/enter-email?pref=disney_premium&duration=monthly'" class="button">Assine agora</button>
                     <span class="text">R$ 45,90/Mês*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="Combo Disney+ Star Plus e Starzplay">
-                    <button class="button">Assine agora</button>
-                    <span class="text">R$ 45,90/Mês*</span>
+                    <button onclick="window.location.href='https://www.disneyplus.com/en-gb/identity/sign-up/enter-email?pref=disney_premium&duration=monthly'" class="button">Assine agora</button>
+                    <span class="text">R$ 35,90/Mês*</span>
                 </li>
             </ul>
             <p class="text--small">
@@ -113,25 +128,175 @@
                 <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney Plus">
                 <strong class="title--small"> R$ 27,90/mês*</strong>
                 <p class="text--big">No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis</p>
-                <button class="button">Assine agora</button>
+                <button onclick="window.location.href='https://www.disneyplus.com/en-gb/identity/sign-up/enter-email?pref=disney_premium&duration=monthly'" class="button">Assine agora</button>
             </li>
             <li class="plans__list__item">
                 <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney Plus">
                 <strong class="title--small"> R$ 45,90/mês*</strong>
                 <p class="text--big">Assine o Disney+ e o Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.</p>
-                <button class="button">Assine agora</button>
+                <button onclick="window.location.href='https://www.disneyplus.com/en-gb/identity/sign-up/enter-email?pref=disney_premium&duration=monthly'" class="button">Assine agora</button>
             </li>
             <li class="plans__list__item">
                 <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney Plus">
                 <strong class="title--small"> R$ 55,90/mês*</strong>
                 <p class="text--big">Disney+, Star+ e STARZPLAY em um plano especial, Assine agora os três serviços juntos.</p>
-                <button class="button">Assine agora</button>
+                <button onclick="window.location.href='https://www.disneyplus.com/en-gb/identity/sign-up/enter-email?pref=disney_premium&duration=monthly'" class="button">Assine agora</button>
             </li>
         </ul>
         <p class="text--small">
                 *O preço pode variar caso a assinatura seja feita através de outras plataformas.
             </p>
     </section>
+    <section class="image-text-section">
+        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Assista onde quiser">
+        <div class="image-text-section__text_container">
+            <h2 class="title">
+                Assista do seu jeito
+            </h2>
+            <p class="text--big">
+                Aproveite seus filmes e séries favoritos onde quiser, quando quiser e no dispositivo que preferir. Com o Disney+, você pode assistir em Smart TVs, smartphones, tablets, computadores e outros dispositivos de streaming.
+            </p>
+        </div>
+    </section>
+    <section class="image-text-section  image-text-section--image-full-width">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png">
+            <img src="./dist/images/fundo_rei_leao.png" alt="fundo_rei_leao">
+        </picture>
+        <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
+            <h2 class="title">
+                Baixe filmes e séries
+            </h2>
+            <p class="text--big">
+                Baixe seus títulos favoritos para assistir offline em até 5 dispositivos. Assim, você pode curtir o Disney+ mesmo quando não estiver conectado à internet.
+        </div>
+    </section>
+    <section class="available-devices" id="available-devices_id"> 
+        <h2 class="title">
+            Disponível nos seus dispositivos favoritos
+        </h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/computador.png" alt="Computador">
+                <h4 class="title--small"> Computador </h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOs</li>
+                    <li>Windows</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images//dispositivos/tv.png" alt="TV">
+                <h4 class="title--small"> TV </h4>
+                <ul class="text">
+                    <li>Amazon Fire</li>
+                    <li>Android TV</li>
+                    <li>Apple TV</li>
+                    <li>Chromecast</li>
+                    <li>TVs LG</li>
+                    <li>Roku</li>
+                    <li>Samsung</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/videogames.png" alt="Videogames">
+                <h4 class="title--small"> Videogames </h4>
+                <ul class="text">
+                    <li>Playstation 5</li>
+                    <li>Plastation 4</li>
+                    <li>Xbox One</li>
+                    <li>Xbox Series X</li>
+                    <li>Xbox Series S</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/celular.png" alt="Celular">
+                <h4 class="title--small"> Celulares e Tablets </h4>
+                <ul class="text">
+                    <li>Tablets Amazon Fire</li>
+                    <li>Celulares e Tablets Androis</li>
+                    <li>Iphones e Ipad´s</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="title">
+            Perguntas frequentes
+        </h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    O que é o Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p>
+                        O Disney+ é o serviço de streaming que oferece uma ampla variedade de filmes e séries da Disney, Pixar, Marvel, Star Wars, National Geographic e muito mais. Com o Disney+, você pode assistir aos seus títulos favoritos em qualquer lugar e a qualquer momento, com a conveniência de um serviço sob demanda.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quais são os planos de assinatura disponíveis no Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p>
+                        O Disney+ oferece diferentes planos de assinatura para atender às suas necessidades. Você pode optar por uma assinatura mensal ou anual, com preços competitivos. Além disso, existem opções de combo que incluem o Star+ e o STARZPLAY para uma experiência de entretenimento ainda mais completa.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quais dispositivos são compatíveis com o Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p>
+                        O Disney+ é compatível com uma ampla variedade de dispositivos, incluindo Smart TVs, smartphones, tablets, computadores e dispositivos de streaming como Chromecast, Apple TV e Amazon Fire TV. Você pode assistir ao Disney+ em até 4 dispositivos simultaneamente com uma única assinatura.
+                    </p>
+                </div>
+            </li>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney Plus">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language__selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Globo">
+                        <select id="langSelect">
+                            <option value="en">English</option>
+                            <option value="pt" selected>Português</option>
+                        </select>
+                    </div>
+
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="https://www.disneyplus.com/pt-pt/legal/termos-de-utiliza%C3%A7%C3%A3o-da-disney">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="https://www.disneyplus.com/pt-pt/legal/pol%C3%ADtica-de-privacidade">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="https://www.disneyplus.com/pt-pt/browse/page-bceb41c9-cfa9-41e3-b6d7-d547362ea1cd">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#available-devices_id">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="https://help.disneyplus.com/en-GB/?utm_source=disneyplus&utm_medium=web&utm_campaign=unauthenticated-site-footer&utm_content=home-page">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="https://help.disneyplus.com/en-GB/article/disneyplus-introduction/?utm_source=disneyplus&utm_medium=web&utm_campaign=unauthenticated-site-footer&utm_content=introduction">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © 2025 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de Assinatura paga. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">
+                A oferta do Disney+ é feita pela The Walt Disney Company Brasil Ltda., com CNPJ nº 16.670.085/0001-55, localizada na Avenida das Nações Unidas, nº 14.171, 16º andar, Brooklin Novo, São Paulo - SP, CEP 04794-000.
+            </p>
+        </div>
+    </footer>
     <script src="./src/main.js"></script>
 </body>
 </html>
